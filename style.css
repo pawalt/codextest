@@ -1,0 +1,54 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    background: #fafafa;
+}
+header {
+    background: #ff5722;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+main {
+    padding: 1rem;
+}
+form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+}
+.input-group input,
+.input-group textarea {
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.dictate {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+#save {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background: #2196f3;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+#recipes {
+    margin-top: 2rem;
+}
+.recipe {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+}
+.recipe h3 {
+    margin-top: 0;
+}
