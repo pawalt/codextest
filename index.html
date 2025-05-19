@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Recipe Notes</title>
+</head>
+<body>
+    <header>
+        <h1>Recipe Notes</h1>
+    </header>
+
+    <main>
+        <form id="recipe-form">
+            <label>
+                Name:
+                <div class="input-group">
+                    <input id="name" type="text" required placeholder="Recipe name">
+                    <button type="button" class="dictate" data-target="name">🎤</button>
+                </div>
+            </label>
+            <label>
+                Ingredients:
+                <div class="input-group">
+                    <textarea id="ingredients" required placeholder="List ingredients" rows="4"></textarea>
+                    <button type="button" class="dictate" data-target="ingredients">🎤</button>
+                </div>
+            </label>
+            <label>
+                Instructions:
+                <div class="input-group">
+                    <textarea id="instructions" required placeholder="Steps" rows="4"></textarea>
+                    <button type="button" class="dictate" data-target="instructions">🎤</button>
+                </div>
+            </label>
+            <label>
+                Cook Time (mins):
+                <div class="input-group">
+                    <input id="cooktime" type="number" required placeholder="e.g. 30">
+                    <button type="button" class="dictate" data-target="cooktime">🎤</button>
+                </div>
+            </label>
+            <button id="save" type="submit">Save Recipe</button>
+        </form>
+
+        <section id="recipes"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
